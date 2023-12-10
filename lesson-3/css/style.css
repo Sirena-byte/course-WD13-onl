@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+}
+[class*="-container"] {
+  /*любая строка, которая содержит -container будет применять данные стили */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px; /*отступы безопасности */
+}
+[class*="__title"] {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 52px;
+}
+[class*="__subtitle"] {
+  color: #86878b;
+  text-align: center;
+  margin-bottom: 71px;
+}
+[class*="__line"] {
+  width: 170px;
+  height: 1px;
+  background: #ec7979;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+/* -----TABS--------- */
+.section-tabs {
+  margin-top: 99px;
+}
+.tabs-container {
+  margin-bottom: 103px;
+}
+.tabs-list {
+  display: flex;
+}
+.list-item {
+  margin: 8px;
+  width: 178px;
+  color: #333;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.tabs {
+  display: flex;
+  border: 1px solid #C6CBCD;
+}
+.tabs__info {
+  display: flex;
+  flex-direction: column;
+  margin: 42px 30px 0 100px;
+}
+
+.item-title {
+  font-family: Open Sans;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 68px;
+}
+.item-text {
+  margin-bottom: 27px;
+}
+.item-text p {
+  margin-bottom: 10px;
+}
+.item-btn {
+  margin-top: auto;
+  margin-bottom: 54px;
+}
+.btn {
+  display: flex;
+  width: 270px;
+  height: 58px;
+  background: #ec7979;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.tabs__img {
+  display: block;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  margin-left: auto;
+}
+/* -----WHY-------- */
+.why__carts {
+  margin: 0 -10px;
+}
+.cart {
+  display: inline-block;
+  width: 370px;
+  padding-top: 40px;
+  margin: 0 11px;
+}
+.cart-image {
+  width: 92px;
+  height: 92px;
+  border: 3px solid #ec7979;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 73px;
+}
+.img {
+  width: 65px;
+  height: 65px;
+  margin: 10%;
+}
+.cart-title {
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 41px;
+}
+.cart-text {
+  text-align: center;
+  margin-bottom: 58px;
+}
