@@ -20,7 +20,6 @@ html {
   padding: 0 15px; /*отступы безопасности */
 }
 [class*="__title"] {
-  position: relative;
   font-size: 36px;
   font-weight: 400;
   text-align: center;
@@ -30,7 +29,6 @@ html {
   text-transform: uppercase;
 }
 [class*="__title"]::after {
-  position: absolute;
   content: "";
   right: calc(50% - 170px / 2);
   width: 170px;
@@ -142,7 +140,6 @@ html {
 /*-------PRICE-------*/
 .section-price {
   background: #f5f5f5;
-  position: relative;
 }
 .price-content__subtitle {
   padding-bottom: 37px;
