@@ -168,7 +168,6 @@ html {
 
 .carts-el:hover{
   padding-top: 0;
-  cursor: pointer;
   transition: all 1s ease-in-out;
 }
 .cart-el__head {
