@@ -143,14 +143,17 @@ html {
 .section-price {
   background: #f5f5f5;
 }
-.price-content__subtitle {
-  padding-bottom: 37px;
+.price-content__subtitle{
+  padding-bottom: 60px;
 }
+/* .price-content__subtitle {
+  padding-bottom: 37px;
+} */
 .price-content__carts {
   display: flex;
   gap: 30px;
   padding-bottom: 50px;
-  padding-top: 12px;
+  /* padding-top: 12px; */
 }
 .carts-el {
   display: flex;
