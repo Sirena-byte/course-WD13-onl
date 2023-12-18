@@ -10,7 +10,6 @@
 html {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
-
   color: #000;
 }
 [class*="-container"] {
@@ -29,7 +28,7 @@ html {
   padding-top: 104px;
   text-transform: uppercase;
 }
-[class*="__title"]::after {
+[class*="__title"]:after {
   position: absolute;
   content: "";
   right: calc(50% - 170px / 2);
@@ -143,8 +142,8 @@ html {
 .section-price {
   background: #f5f5f5;
 }
-.price-content__subtitle{
-  padding-bottom: 60px;
+.price-content__subtitle {
+  padding-bottom: 49px;
 }
 /* .price-content__subtitle {
   padding-bottom: 37px;
@@ -166,10 +165,10 @@ html {
   font-weight: 700;
   text-transform: capitalize;
   padding-top: 30px;
-  transition: 1s;;
+  transition: 1s;
 }
 
-.carts-el:hover{
+.carts-el:hover {
   padding-top: 0;
   transition: all 1s ease-in-out;
 }
@@ -204,4 +203,61 @@ td {
   border-bottom: 2px solid #f5f5f5;
   background: #fff;
   padding: 13px;
+}
+/*-------REVIEWS------*/
+.section-reviews {
+  margin-bottom: 64px;
+}
+.reviews-content__subtitle {
+  padding-bottom: 82px;
+}
+.reviews-content__carts {
+  display: flex;
+  gap: 30px;
+}
+.cart-el {
+}
+.catrt-el__text {
+  border-radius: 10px;
+  background: #e2e2e2;
+  color: #86878b;
+  text-align: center;
+  font-weight: 400;
+  padding: 37px 28px 38px 23px;
+  margin-bottom: 66px;
+  position: relative;
+}
+.catrt-el__text::after {
+  content: url(../img/reviews/Polygon.svg);
+  position: absolute;
+  right: 74%;
+  width: 30px;
+  height: 20px;
+  bottom: -19px;
+}
+.cart-el__people {
+  display: flex;
+  gap: 30px;
+}
+.people-photo {
+  height: 70px;
+  width: 70px;
+}
+.people-photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.people-name {
+  padding-top: 10px;
+  color: #000;
+  font-family: Open Sans;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding-bottom: 25px;
+}
+.people-job {
+font-weight: 400;
+/* padding-left: 100px; */
 }
