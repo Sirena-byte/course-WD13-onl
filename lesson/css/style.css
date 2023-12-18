@@ -301,5 +301,35 @@ td {
 }
 .people-job {
 font-weight: 400;
-/* padding-left: 100px; */
+}
+
+/*-------FOOTER-------*/
+.footer {
+  background: #000;
+}
+.footer-container {
+}
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 32.8px;
+  padding: 35px 0 27.5px 0;
+  
+}
+.footer-icon path{
+  transition: .3s;
+}
+.footer-icon path:hover{
+  fill:#86878b;
+}
+.footer-text {
+  color: rgba(255, 255, 255, 0.50);
+text-align: center;
+font-weight: 400;
+padding-bottom: 27px;
+
+}
+.footer-text::before{
+  content:"\00A9";
+ margin: 5px;
 }
