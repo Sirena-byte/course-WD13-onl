@@ -44,7 +44,7 @@ html {
 }
 /*------SOCIAL-------*/
 .section-social {
-  background: #F8EFEF;
+  background: #f8efef;
 }
 .social-container {
   display: flex;
@@ -54,18 +54,17 @@ html {
   width: 470px;
 }
 .info-title {
-color: #333;
-font-family: Open Sans;
-font-size: 24px;
-font-weight: 700;
-text-transform: capitalize;
-padding: 10px 0;
+  color: #333;
+  font-family: Open Sans;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding: 10px 0;
 }
 .info-text {
-color: #86878B;
-font-weight: 400;
-padding: 20px 0;
-
+  color: #86878b;
+  font-weight: 400;
+  padding: 20px 0;
 }
 .social-content__icons {
   display: flex;
@@ -73,6 +72,7 @@ padding: 20px 0;
   align-items: center;
   gap: 30px;
 }
+
 .icon-el {
   display: flex;
   width: 70px;
@@ -80,6 +80,7 @@ padding: 20px 0;
   align-items: center;
   justify-content: center;
 }
+
 /* -----TABS--------- */
 .section-tabs {
   margin-top: 99px;
@@ -89,22 +90,19 @@ padding: 20px 0;
   display: flex;
 }
 .list-item {
- padding: 8px;
+  padding: 8px;
   width: 203px;
   color: #333;
   text-align: center;
   font-family: Open Sans;
   font-size: 14px;
   text-transform: uppercase;
-
 }
-.active{
-
-border: 1px solid #c6cbcd;
-border-bottom: 2px solid #FFF;
-border-radius: 5px 5px 0 0;
-margin-bottom: -1px;
-
+.active {
+  border: 1px solid #c6cbcd;
+  border-bottom: 2px solid #fff;
+  border-radius: 5px 5px 0 0;
+  margin-bottom: -1px;
 }
 .tabs {
   display: flex;
@@ -269,13 +267,23 @@ td {
   margin-bottom: 66px;
   position: relative;
 }
+.cart-el {
+  position: relative;
+}
 .catrt-el__text::after {
-  content: url(../img/reviews/Polygon.svg);
+  /* content: url(../img/reviews/Polygon.svg);
   position: absolute;
   right: 74%;
   width: 30px;
   height: 20px;
-  bottom: -19px;
+  bottom: -19px; */
+  content: "";
+  position: absolute;
+  left: 19%;
+  top: 100%;
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  border-top: 20px solid #e2e2e2;
 }
 .cart-el__people {
   display: flex;
@@ -284,11 +292,12 @@ td {
 .people-photo {
   height: 70px;
   width: 70px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 .people-photo img {
   width: 100%;
   height: 100%;
-  border-radius: 50%;
 }
 .people-name {
   padding-top: 10px;
@@ -300,38 +309,35 @@ td {
   padding-bottom: 25px;
 }
 .people-job {
-font-weight: 400;
+  font-weight: 400;
 }
 
 /*-------FOOTER-------*/
 .footer {
   background: #000;
 }
-.footer-container {
-}
 .footer-icons {
   display: flex;
   justify-content: center;
   gap: 32.8px;
   padding: 35px 0 27.5px 0;
-  
 }
-.footer-icon path{
-  transition: .3s;
+.footer-icon svg {
+  transition: 0.3s;
 }
-.footer-icon path:hover{
-  fill:#86878b;
+.footer-icon svg:hover {
+  stroke: #6798d5;
+  transform: scale(1.3);
 }
 .footer-text {
-  color: rgba(255, 255, 255, 0.50);
-text-align: center;
-font-weight: 400;
-padding-bottom: 27px;
-
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  font-weight: 400;
+  padding-bottom: 27px;
 }
-.footer-text::before{
-  content:"\00A9";
- margin:5px;
- position: relative;
- top: 1px;
+.footer-text::before {
+  content: "\00A9";
+  margin: 5px;
+  position: relative;
+  top: 1px;
 }
