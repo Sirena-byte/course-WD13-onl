@@ -42,7 +42,44 @@ html {
   text-align: center;
   padding-bottom: 71px;
 }
+/*------SOCIAL-------*/
+.section-social {
+  background: #F8EFEF;
+}
+.social-container {
+  display: flex;
+  gap: 30px;
+}
+.social-content__info {
+  width: 470px;
+}
+.info-title {
+color: #333;
+font-family: Open Sans;
+font-size: 24px;
+font-weight: 700;
+text-transform: capitalize;
+padding: 10px 0;
+}
+.info-text {
+color: #86878B;
+font-weight: 400;
+padding: 20px 0;
 
+}
+.social-content__icons {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 30px;
+}
+.icon-el {
+  display: flex;
+  width: 70px;
+  height: 70px;
+  align-items: center;
+  justify-content: center;
+}
 /* -----TABS--------- */
 .section-tabs {
   margin-top: 99px;
@@ -145,14 +182,10 @@ html {
 .price-content__subtitle {
   padding-bottom: 49px;
 }
-/* .price-content__subtitle {
-  padding-bottom: 37px;
-} */
 .price-content__carts {
   display: flex;
   gap: 30px;
   padding-bottom: 50px;
-  /* padding-top: 12px; */
 }
 .carts-el {
   display: flex;
