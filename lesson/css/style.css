@@ -42,8 +42,51 @@ html {
   text-align: center;
   padding-bottom: 71px;
 }
+/*------HEADER-------*/
+.header {
+  background: #000;
+  position: fixed;
+ 
+  width: 100%;
+}
+.header-container {
+ display: flex;
+ justify-content: space-between;
+ padding: 22px 0;
+}
+.header-logo {
+  position: relative;
+ top: 0;
+ right: 58px;
+}
+.logo {
+  width: 52px;
+height: 31px;
+flex-shrink: 0;
+}
+.header-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+.header-list__links {
+  display: flex;
+  gap: 65px;
+  align-items: center;
+  padding-right: 62px;
+}
+.link-el {
+  color: #fff;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
 /*------SOCIAL-------*/
 .section-social {
+  padding-top: 75px;
   background: #f8efef;
 }
 .social-container {
@@ -255,8 +298,7 @@ td {
   display: flex;
   gap: 30px;
 }
-.cart-el {
-}
+
 .catrt-el__text {
   border-radius: 10px;
   background: #e2e2e2;
