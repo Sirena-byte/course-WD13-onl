@@ -46,35 +46,33 @@ html {
 .header {
   background: #000;
   position: fixed;
- 
+  z-index: 20;
   width: 100%;
 }
 .header-container {
- display: flex;
- justify-content: space-between;
- padding: 22px 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 0;
 }
 .header-logo {
   position: relative;
- top: 0;
- right: 58px;
+  right: 40px;
 }
 .logo {
   width: 52px;
-height: 31px;
-flex-shrink: 0;
+  height: 31px;
+  flex-shrink: 0;
 }
 .header-list {
   display: flex;
   align-items: center;
   justify-content: space-between;
- 
 }
 .header-list__links {
   display: flex;
   gap: 65px;
   align-items: center;
-  padding-right: 62px;
+  padding-right: 45px;
 }
 .link-el {
   color: #fff;
@@ -84,9 +82,133 @@ flex-shrink: 0;
   font-weight: 600;
   text-transform: capitalize;
 }
+/*------AXIT---------*/
+.section-axit {
+  background: url(../img/bg_axit.png) rgba(0, 0, 0, 0.5) no-repeat center/cover;
+  height: 1026px;
+}
+
+.axit-block {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 280px;
+}
+.axit-content {
+  width: 670px;
+}
+.axit-content__logo {
+  padding: 23px 0 70px;
+}
+.axit-content-title {
+  position: relative;
+  color: #fff;
+  font-size: 48px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-top: 0;
+  text-align: left;
+  padding-bottom: 55px;
+  margin-bottom: 42px;
+}
+.axit-content-title::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 170px;
+  height: 1px;
+  background: #fff;
+  bottom: 0;
+}
+.axit-content-text {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  width: 270px;
+  margin-bottom: 42px;
+}
+.axit-content-button {
+  display: inline-block;
+  width: 270px;
+  height: 58px;
+  border: 1px solid #fff;
+  text-align: center;
+  padding: 15px 0;
+}
+.button {
+  color: #fff;
+  text-align: center;
+  font-family: Open Sans;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.axit-form {
+  width: 470px;
+  height: 450px;
+  border-radius: 10px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.form-title {
+  color: #333;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 29px 0 73px;
+}
+.form-title span {
+  color: #ec7979;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  
+}
+.form-content{
+  padding: 0 50px;
+}
+.axit-form__label {
+  color: #bdbdbd;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+
+  cursor: pointer;
+}
+[class*="-input"] {
+  width: 100%;
+  border: none;
+  margin-bottom: 35px;
+  border-bottom: 1px solid #bdbdbd;
+  background: transparent;
+
+}
+input[type="text"],[type="email"],[type="password"]:focus{
+  outline: none;
+  background: transparent;
+  padding-left: 10%;
+}
+.form-button{
+  width: 100%;
+  height: 60px;
+  border-radius: 0 0 5px 5px;
+  background: #EC7979;
+  border:none;
+  cursor: pointer;
+  color: #FFF;
+
+text-align: center;
+font-family: Open Sans;
+font-size: 15px;
+font-weight: 600;
+}
+
+
 /*------SOCIAL-------*/
 .section-social {
-  padding-top: 75px;
   background: #f8efef;
 }
 .social-container {
@@ -126,7 +248,7 @@ flex-shrink: 0;
 
 /* -----TABS--------- */
 .section-tabs {
-  margin-top: 99px;
+  margin-top: 103px;
 }
 
 .tabs-list {
