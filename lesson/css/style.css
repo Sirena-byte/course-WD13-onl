@@ -481,6 +481,47 @@ td {
 .people-job {
   font-weight: 400;
 }
+/*-------STYLISH------*/
+.section-stylish {
+  position: relative;
+  background: url(../img/bg_stailing.png);
+ 
+}
+.section-stylish::before{
+  position: absolute;
+  content:"";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.50);
+
+}
+.stylish-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 5;
+  color:#fff;
+  align-items: center;
+  padding-bottom: 50px;
+  
+}
+.stylish__title::after{
+  background: #fff;
+}
+.stylish__subtitle {
+  color:#fff;
+}
+.stylish__button {
+  border: 1px solid #fff;
+  background: none;
+  width: 370px;
+  height: 58px;
+}
+.stylish__button a{
+  color:#fff;
+}
+
+
 
 /*-------FOOTER-------*/
 .footer {
