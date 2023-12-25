@@ -94,12 +94,18 @@ body {
   padding-right: 45px;
 }
 .link-el {
+  height: 100%;
   color: #fff;
   text-align: center;
   font-family: Open Sans;
   font-size: 14px;
   font-weight: 600;
   text-transform: capitalize;
+  transition: 0.3s;
+}
+.link-el:hover{
+color:#EC7979;
+transition: 0.3s;
 }
 /*------AXIT---------*/
 .section-axit {
@@ -391,12 +397,13 @@ body {
   font-weight: 700;
   text-transform: capitalize;
   padding-top: 30px;
+}
+.cart{
   transition: 0.3s;
 }
-
-.carts-el:hover {
+.cart:hover {
   padding-top: 0;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .cart-el__head {
   background: #333;
@@ -510,8 +517,8 @@ td {
   align-items: center;
   padding-bottom: 50px;
 }
-.stylish__title{
-  color:#fff;
+.stylish__title {
+  color: #fff;
 }
 .stylish__title::after {
   background: #fff;
@@ -520,21 +527,21 @@ td {
   color: #fff;
 }
 
-.stylish__button{
+.stylish__button {
   margin: 0 auto;
   width: 370px;
   height: 58px;
   border: 1px solid #fff;
-  color:#fff;
+  color: #fff;
   background: none;
 }
 .stylish__button:hover {
   border: 1px solid #ec7979;
-  color:#ec7979;
+  color: #ec7979;
   background: none;
-} 
+}
 /*------CONTACT US----*/
-.contact-form-block{
+.contact-form-block {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -544,24 +551,23 @@ td {
   display: flex;
   width: 100%;
 }
-.message{
+.message {
   height: 100%;
   resize: none;
 }
 .form-contact {
   padding: 0;
- 
 }
 .input-el__contact {
   margin-bottom: 36px;
 }
-.contact-us__button{
+.contact-us__button {
   width: 370px;
   height: 58px;
-  border:none;
-margin: 18px 0;
+  border: none;
+  margin: 18px 0;
 }
-.contact-us__button span{
+.contact-us__button span {
   margin: 0 5px;
 }
 /*-------FOOTER-------*/
