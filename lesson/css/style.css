@@ -12,7 +12,7 @@ html {
   font-size: 18px;
   color: #000;
 }
-body{
+body {
   position: relative;
 }
 [class*="-container"] {
@@ -43,19 +43,23 @@ body{
 [class*="__subtitle"] {
   color: #86878b;
   text-align: center;
-  padding-bottom: 71px;
+  padding-bottom: 72px;
 }
 [class*="__button"] {
-display: flex;
-width: 270px;
-height: 60px;
-justify-content: center;
-align-items: center;
-color: #fff;
-background: #ec7979;
-font-family: Open Sans;
-font-weight: 600;
-text-transform: capitalize; 
+  display: flex;
+  width: 270px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: #ec7979;
+  font-family: Open Sans;
+  font-weight: 600;
+  text-transform: capitalize;
+  transition: 0.8s;
+}
+[class*="__button"]:hover {
+  background: #ab4949;
 }
 /*------HEADER-------*/
 .header {
@@ -152,8 +156,13 @@ text-transform: capitalize;
   width: 270px;
   margin-bottom: 42px;
 }
-.axit-content__button{
+.axit-content__button {
   border: 1px solid #fff;
+  background: none;
+}
+.axit-content__button:hover {
+  border: 1px solid #ec7979;
+  color: #ec7979;
   background: none;
 }
 .axit-form {
@@ -180,9 +189,9 @@ text-transform: capitalize;
 }
 
 .form-block {
-display: flex;
-flex-direction: column;
-flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 .form-inputs {
   width: 100%;
@@ -190,7 +199,6 @@ flex-grow: 1;
   flex-direction: column;
   flex-grow: 1;
   padding: 0 50px;
-
 }
 .input-el {
   color: #bdbdbd;
@@ -199,8 +207,8 @@ flex-grow: 1;
   font-weight: 400;
   margin-bottom: 20px;
   padding: 16px 0;
-  border:none;/*убираем рамку*/
-  border-bottom: 1px solid  #BDBDBD;/* Линия снизу */
+  border: none; /*убираем рамку*/
+  border-bottom: 1px solid #bdbdbd; /* Линия снизу */
   background: transparent; /* Прозрачный фон */
 }
 .input-el:focus {
@@ -217,17 +225,18 @@ flex-grow: 1;
 }
 
 .form__button {
-
   width: 100%;
 }
-.form__button button{
+
+.form__button button {
   background: #ec7979;
-  border:none;
-color: #fff;
-font-size: 15px;
-width: 100%;
-height: 100%;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  width: 100%;
+  height: 100%;
 }
+
 /*------SOCIAL-------*/
 .section-social {
   background: #f8efef;
@@ -313,7 +322,7 @@ height: 100%;
   margin-bottom: 10px;
 }
 
-.item__button{
+.item__button {
   margin-bottom: 54px;
 }
 
@@ -382,12 +391,12 @@ height: 100%;
   font-weight: 700;
   text-transform: capitalize;
   padding-top: 30px;
-  transition: 1s;
+  transition: 0.3s;
 }
 
 .carts-el:hover {
   padding-top: 0;
-  transition: all 1s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 .cart-el__head {
   background: #333;
@@ -485,44 +494,76 @@ td {
 .section-stylish {
   position: relative;
   background: url(../img/bg_stailing.png);
- 
 }
-.section-stylish::before{
+.section-stylish::before {
   position: absolute;
-  content:"";
+  content: "";
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.50);
-
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 5;
 }
 .stylish-container {
-  display: flex;
-  flex-direction: column;
   position: relative;
-  z-index: 5;
-  color:#fff;
+  z-index: 6;
+  color: #fff;
   align-items: center;
   padding-bottom: 50px;
-  
 }
-.stylish__title::after{
+.stylish__title{
+  color:#fff;
+}
+.stylish__title::after {
   background: #fff;
 }
 .stylish__subtitle {
-  color:#fff;
+  color: #fff;
 }
-.stylish__button {
-  border: 1px solid #fff;
-  background: none;
+
+.stylish__button{
+  margin: 0 auto;
   width: 370px;
   height: 58px;
-}
-.stylish__button a{
+  border: 1px solid #fff;
   color:#fff;
+  background: none;
 }
-
-
-
+.stylish__button:hover {
+  border: 1px solid #ec7979;
+  color:#ec7979;
+  background: none;
+} 
+/*------CONTACT US----*/
+.contact-form-block{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.contact-as__form {
+  display: flex;
+  width: 100%;
+}
+.message{
+  height: 100%;
+  resize: none;
+}
+.form-contact {
+  padding: 0;
+ 
+}
+.input-el__contact {
+  margin-bottom: 36px;
+}
+.contact-us__button{
+  width: 370px;
+  height: 58px;
+  border:none;
+margin: 18px 0;
+}
+.contact-us__button span{
+  margin: 0 5px;
+}
 /*-------FOOTER-------*/
 .footer {
   background: #000;
