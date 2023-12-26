@@ -71,7 +71,7 @@ body {
 .header-container {
   display: flex;
   justify-content: space-between;
-  padding: 18px 0;
+  padding: 18px 15px;
 }
 .header-logo {
   position: relative;
@@ -174,7 +174,6 @@ transition: 0.3s;
 .axit-form {
   width: 470px;
   height: 450px;
-  border-radius: 10px;
   background: #fff;
   overflow: hidden;
   display: flex;
@@ -219,7 +218,7 @@ transition: 0.3s;
 }
 .input-el:focus {
   outline: none; /* Убираем контур */
-  border-bottom: 2px solid #3f3f3f; /* Синяя линия снизу */
+  border-bottom: 2px solid #3f3f3f; /*  линия снизу */
 }
 .input-el::placeholder {
   transition: 0.5s; /* Время трансформации */
@@ -278,6 +277,7 @@ transition: 0.3s;
   display: flex;
   width: 70px;
   height: 70px;
+  border-radius:10%;
   align-items: center;
   justify-content: center;
   transition: .3s;
@@ -290,6 +290,7 @@ transition: 0.3s;
   transition: .3s;
   fill:#bdbdbd;
   color: #EC7979;
+
 }
 .icon-el:hover{
   fill:#585151;
@@ -362,6 +363,7 @@ transition: 0.3s;
   width: 370px;
   padding-top: 40px;
   margin: 0 11px;
+  
 }
 .cart-image {
   width: 92px;
@@ -397,7 +399,7 @@ transition: 0.3s;
 }
 .price-content__carts {
   display: flex;
-  gap: 30px;
+  /* gap: 30px; */
   padding-bottom: 50px;
 }
 .carts-el {
