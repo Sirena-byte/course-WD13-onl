@@ -286,6 +286,7 @@ justify-content: space-between;
   }
   .link-el {
     color: #fff;
+    padding: 10px 0;
   }
   .link-el:hover {
     color: blue;
